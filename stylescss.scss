@@ -1,0 +1,69 @@
+@mixin smallTitle {
+    font-size: 1rem;
+    line-height: 20px;
+    font-weight: 400;
+}
+@mixin mediumTitle {
+    font-size: 2rem;
+    line-height: 40px;
+    font-weight: 500;
+}
+@mixin largeTitle {
+    font-size: 3rem;
+    line-height: 60px;
+    font-weight: 700;
+}
+@mixin smallParagraph {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+}
+@mixin mediumParagraph {
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 400;
+}
+@mixin largeParagraph {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+
+@media only screen and (max-width:1024px){
+    .conteiner {
+        @include largeTitle();
+        @include largeParagraph();
+        
+    }
+}
+
+@media only screen and (max-width:780px){
+    .conteiner {
+        @include mediumTitle();
+        @include mediumParagraph();
+        
+    }
+}
+
+@media only screen and (max-width:400px){
+    .conteiner {
+        @include smallTitle();
+        @include smallParagraph();
+        
+    }
+}
+
+@mixin exercitiu2 ($w:1000px , $h:200px , $color:red) {
+    width: $w;
+    height: $h;
+    color: $color;
+}
+
+.exemplu1 {
+    @include exercitiu2();
+}
+
+.exemplu2 {
+    @include exercitiu2(500px, 300px, blue );
+}

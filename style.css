@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,400&display=swap');
+
+
+.exemplu1 , .exemplu2 {
+    border: 1px solid black;
+    margin-top: 10px;
+    font-family: 'Lora', serif;
+    
+}
